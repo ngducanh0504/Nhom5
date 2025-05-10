@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Nhóm 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Thiết lập chung */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            color: white !important;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffdd57 !important;
+            transform: scale(1.1);
+        }
+
+        /* Main Content */
+        main {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Ảnh nhóm */
+        .img-fluid {
+            width: 30%;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(255, 221, 87, 0.6);
+            transition: 0.3s;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);
+        }
+
+        /* Thành viên */
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .col-md-4 {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 30%;
+        }
+
+        .col-md-4:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Nút xem chi tiết */
+        .btn-primary {
+            background: #ffdd57;
+            color: #333;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(255, 221, 87, 0.6);
+        }
+
+        .btn-primary:hover {
+            background: #ffd700;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Nhóm 5</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                    <a class="nav-link" href="students/student1.html">Sinh viên 1</a>
+                    <a class="nav-link" href="students/student2.html">Sinh viên 2</a>
+                    <a class="nav-link" href="students/student3.html">Sinh viên 3</a>
+                    <a class="nav-link" href="students/student4.html">Sinh viên 4</a>
+                    <a class="nav-link" href="students/student5.html">Sinh viên 5</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="text-center">
+            <h1>Giới thiệu Nhóm 5</h1>
+            <p>Chào mừng đến với website của Nhóm 5! Chúng tôi là nhóm sinh viên ngành Công nghệ phần mềm, cùng nhau thực hiện dự án xây dựng website giới thiệu bản thân.</p>
+            <img src="assets/images/4.jpg" alt="Ảnh nhóm" class="img-fluid">
+        </section>
+
+        <section>
+            <h2>Thành viên</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Sinh viên 1</h4>
+                    <p>Đỗ Công Chiến - Lập trình viên Full-stack.</p>
+                    <a href="students/student1.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Sinh viên 2</h4>
+                    <p> - Thiết kế UI/UX.</p>
+                    <a href="students/student2.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Sinh viên 3</h4>
+                    <p>Lê Văn C - Lập trình viên Back-end.</p>
+                    <a href="students/student3.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Sinh viên 4</h4>
+                    <p>Lê Văn C - Lập trình viên Back-end.</p>
+                    <a href="students/student4.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Sinh viên 5</h4>
+                    <p>Lê Văn C - Lập trình viên Back-end.</p>
+                    <a href="students/student5.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nhóm 5</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

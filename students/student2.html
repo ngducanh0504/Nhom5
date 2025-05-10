@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Sinh viên 1</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Thiết lập chung */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            color: #fff !important;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffdd57 !important;
+            transform: scale(1.1);
+        }
+
+        /* Main Content */
+        main {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Ảnh đại diện */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffdd57;
+            box-shadow: 0px 4px 8px rgba(255, 221, 87, 0.6);
+            transition: 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        /* Card thiết kế */
+        .info-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Danh sách với icon */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        ul li::before {
+            content: "🔥";
+            margin-right: 10px;
+        }
+
+        /* Nút liên hệ */
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffdd57;
+            color: #333;
+            font-weight: bold;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(255, 221, 87, 0.6);
+        }
+
+        .contact-btn:hover {
+            background: #ffd700;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Nhóm 5</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html">Trang chủ</a>
+                    <a class="nav-link" href="student1.html">Sinh viên 1</a>
+                    <a class="nav-link" href="student2.html">Sinh viên 2</a>
+                    <a class="nav-link" href="student3.html">Sinh viên 3</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="text-center">
+            <h1>Trang cá nhân - Sinh viên 1</h1>
+            <img src="../assets/images/5.jpg" alt="Ảnh đại diện" class="profile-pic">
+            <h3>Nguyễn Lê Duy</h3>
+            <p><strong>Sở thích:</strong> Lập trình, đọc sách, du lịch.</p>
+            <p><strong>Định hướng nghề nghiệp:</strong> Lập trình viên Full-stack.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Giới thiệu</h2>
+            <p>Tôi là Nguyễn Lê Duy, một sinh viên ngành Công nghệ Phần mềm với đam mê mãnh liệt với lập trình. Tôi đã tham gia nhiều dự án thực tế như hệ thống bán hàng, quản lý phòng khám và tự động hóa web.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Quá trình học tập</h2>
+            <ul>
+                <li>Cấu trúc dữ liệu và giải thuật</li>
+                <li>Lập trình web</li>
+                <li>Hệ quản trị cơ sở dữ liệu</li>
+                <li>Phát triển ứng dụng với ReactJS & NodeJS</li>
+                <li>Đồ án: Website bán hàng</li>
+            </ul>
+        </section>
+
+        <section class="info-card">
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript, Python, Java</li>
+                <li>ReactJS, NodeJS, Express</li>
+                <li>MySQL, MongoDB</li>
+                <li>Tự động hóa với Selenium</li>
+                <li>Thiết kế UI/UX cơ bản</li>
+            </ul>
+        </section>
+
+        <section class="info-card">
+            <h2>Dự án cá nhân</h2>
+            <p>✅ Website bán hàng với ReactJS.</p>
+            <p>✅ Hệ thống quản lý phòng khám.</p>
+            <p>✅ Hệ thống chat nội bộ.</p>
+        </section>
+
+        <section class="text-center">
+            <h2>Liên hệ</h2>
+            <p>Email: nguyen.van.a@example.com</p>
+            <p>GitHub: <a href="https://github.com/nguyenvana" target="_blank" class="contact-btn">GitHub</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nhóm 5 | Designed by VIP PRO</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
